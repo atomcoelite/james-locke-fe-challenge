@@ -140,8 +140,6 @@ const SearchResult: React.FC = () => {
             </div>
             {loading ? (
               <div>Loading products...</div>
-            ) : error ? (
-              <div className={styles.errorMessage}>Error: {error}</div>
             ) : (
               <div className={styles.productGrid}>
                 {products?.map((product) => (
