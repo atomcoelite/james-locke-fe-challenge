@@ -1,0 +1,31 @@
+.LayoutSection {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+
+  ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    &:not(:last-child)::after {
+      content: '/';
+      margin: 0 0.5rem;
+      color: #666;
+    }
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

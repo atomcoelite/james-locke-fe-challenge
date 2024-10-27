@@ -1,0 +1,93 @@
+.trendingProducts {
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.productGrid {
+  display: flex;
+}
+
+.productCard {
+  padding: 1rem;
+  transition: transform 0.3s ease;
+
+  &:not(.active) {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  margin-bottom: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.commission {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.productInfo {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .addToShelf {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+
+  .addToBag {
+    background-color: #000;
+    color: #fff;
+  }
+}
