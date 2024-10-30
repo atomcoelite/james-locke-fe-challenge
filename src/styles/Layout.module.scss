@@ -1,10 +1,12 @@
+@import 'variables';
+
 .LayoutSection {
-  max-width: 1200px;
+  max-width: $max-width;
   margin: 0 auto;
 }
 
 .breadcrumb {
-  margin-bottom: 1rem;
+  margin-bottom: $margin-bottom;
 
   ol {
     list-style: none;
@@ -15,13 +17,13 @@
   li {
     &:not(:last-child)::after {
       content: '/';
-      margin: 0 0.5rem;
-      color: #666;
+      margin: 0 $padding-small;
+      color: $color-gray;
     }
   }
 
   a {
-    color: #333;
+    color: $color-dark;
     text-decoration: none;
 
     &:hover {

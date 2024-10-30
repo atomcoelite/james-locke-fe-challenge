@@ -1,123 +1,124 @@
+@import 'variables';
 
 .header {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-}
+  background-color: $color-dark;
+  color: $color-light;
+  padding: $padding-medium;
 
-.topBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $padding-medium;
+  }
 
-.menuButton {
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
-}
-
-.icons {
-  display: flex;
-  gap: 1rem;
-
-  button {
+  .menuButton {
     background: none;
     border: none;
-    color: #fff;
+    color: $color-light;
     cursor: pointer;
   }
-}
 
-.searchBar {
-  position: relative;
-  margin-bottom: 1rem;
-
-  input {
-    width: 60%;
-    padding: 0.75rem 1rem 0.75rem 2.5rem;
-    border-radius: 2rem;
-    border: none;
-    font-size: 1rem;
-  }
-
-  .searchIcon {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #666;
-  }
-}
-
-.nav {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  margin-top: 20px;
-
-  .navMenu {
-    display: flex;
-    margin: auto;
-  }
-
-  a, .dropdownButton {
-    color: #FFFFFF;
+  .logo {
+    font-size: $font-size-large;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 0.9rem;
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
+    color: $color-light;
+  }
 
-    &:hover {
-      background-color: #575757;
+  .icons {
+    display: flex;
+    gap: $padding-small;
+
+    button {
+      background: none;
+      border: none;
+      color: $color-light;
+      cursor: pointer;
     }
   }
 
-  .dropdownButton {
+  .searchBar {
+    position: relative;
+    margin-bottom: $padding-medium;
+
+    input {
+      width: 60%;
+      padding: 0.75rem $padding-medium 0.75rem 2.5rem;
+      border-radius: $border-radius-large;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .searchIcon {
+      position: absolute;
+      left: $padding-small;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #666;
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: $padding-small;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    margin-top: $padding-medium;
+
+    .navMenu {
+      display: flex;
+      margin: auto;
+    }
+
+    a,
+    .dropdownButton {
+      color: $color-light;
+      text-decoration: none;
+      font-size: $font-size-small;
+      padding: 0.4rem $padding-medium;
+      border-radius: $border-radius-large;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: $color-hover;
+      }
+    }
+
+    .dropdownButton {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: $color-light;
+      font-size: $font-size-small;
+    }
+  }
+
+  .searchContainer {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #FFFFFF;
-    font-size: 0.9rem;
-  }
-}
+    background-color: $color-light;
+    border-radius: $border-radius-large;
+    padding: $padding-small $padding-medium;
+    margin: auto;
+    width: 60%;
 
-.searchContainer {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  margin: auto;
-  width: 60%;
-  
-  .searchIcon {
-    color: #FF259B;
-    margin-right: 0.5rem;
-    width: auto;
-  }
+    .searchIcon {
+      color: $color-accent;
+      margin-right: $padding-small;
+    }
 
-  .searchInput {
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    font-size: 1rem;
+    .searchInput {
+      flex-grow: 1;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
   }
 }

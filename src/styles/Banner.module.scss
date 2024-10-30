@@ -1,11 +1,13 @@
+@import 'variables';
+
 .banner {
-  background-color: #000;
-  color: #fff;
+  background-color: $color-dark;
+  color: $color-white;
   padding: 3rem;
   text-align: center;
-}
-
-.banner h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 }

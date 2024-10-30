@@ -1,24 +1,26 @@
+@import 'variables';
+
 .trending {
-  padding: 2rem;
+  padding: $padding-large;
 }
-  
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: $padding-medium;
 }
 
 .shopAndSell {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: $margin-top-large;
 
   h2 {
-    font-size: 1.5rem;
+    font-size: $font-size-medium;
     margin-bottom: 0.5rem;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: $font-size-title;
     font-weight: bold;
   }
 }

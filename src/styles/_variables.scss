@@ -1,0 +1,35 @@
+$color-dark: #000;
+$color-white: #fff;
+$color-light: $color-white;
+$color-accent: #FF259B;
+$color-hover: #575757;
+$color-gray: #666;
+$color-opacity: 0.7;
+$link-color: #BBBBBB;
+$background-color-primary: $color-dark;
+$text-color-primary: $color-white;
+
+$font-family: Arial, sans-serif;
+$font-size-body: 0.9rem;
+$font-size-small: 1rem;
+$font-size-medium: 1.5rem;
+$font-size-large: 2rem;
+$font-size-title: 3rem;
+
+$border-radius-small: 4px;
+$border-radius: 5px;
+$border-radius-large: 20px;
+
+$max-width: 1200px;
+$padding-small: 0.5rem;
+$padding-medium: 1rem;
+$padding-large: 2rem;
+$margin-top-large: 2rem;
+$margin-bottom: 1rem;
+$margin-large: 4rem;
+$gap-small: $padding-medium;
+$gap-medium: $padding-large;
+$gap-large: $margin-large;
+$footer-padding: $margin-large $padding-medium;
+
+$transition-duration: 0.3s;
